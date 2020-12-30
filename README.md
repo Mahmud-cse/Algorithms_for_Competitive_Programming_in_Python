@@ -122,4 +122,4 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 6. <del>Trigram search</del>
 
 Source @ http://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
-idea from https://github.com/haikentcode/top10algoritms
+<br> Idea from https://github.com/haikentcode/top10algoritms
