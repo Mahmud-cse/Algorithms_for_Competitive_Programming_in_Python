@@ -123,3 +123,6 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 Source @ http://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
 <br> Idea from https://github.com/haikentcode/top10algoritms
+
+This github repo is amazing:
+https://github.com/cheran-senthil/PyRival
