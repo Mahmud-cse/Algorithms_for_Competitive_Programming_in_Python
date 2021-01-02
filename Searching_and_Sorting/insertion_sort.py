@@ -10,7 +10,7 @@ def insertion_sort(aa):
     for j in range(1,n):
         key = aa[j]
         i = j - 1
-        while i > 0  and aa[i] > key:
+        while i >= 0  and aa[i] > key:
             aa[i + 1] = aa[i]
             i -= 1
         aa[i + 1] = key
