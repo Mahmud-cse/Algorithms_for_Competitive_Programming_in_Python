@@ -38,7 +38,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 1. <del>Binary Search</del>
 2. <del>Quick Sort</del>
-3. <del>Merge Sort</del>
+3. Merge Sort
 4. <del>Order Statistics</del>
 5. <del>KMP algorithm</del>
 6. <del>Rabin karp</del>
