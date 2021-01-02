@@ -59,7 +59,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 2. <del>Sieve of Eratosthenes</del>
 3. <del>Segmented Sieve</del>
 4. <del>Wilson’s Theorem - P</del>
-5. <del>Prime Factorisation</del>
+5. Prime Factorisation
 6. <del>Pollard’s rho algorithm</del>
 
 
