@@ -10,6 +10,7 @@ def insertion_sort(aa):
     for j in range(1,n):
         key = aa[j]
         i = j - 1
+        #we move the element as we would in a "jeu de taquin", one by one
         while i >= 0  and aa[i] > key:
             aa[i + 1] = aa[i]
             i -= 1
