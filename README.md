@@ -46,6 +46,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 8. <del>Aho Corasick String Matching</del>
 9. <del>Counting Sort</del>
 10. <del>Manacher’s algorithm: Part 1, Part 2 and Part 3</del>
+11. Insertion Sort
 
 ## Number theory and Other Mathematical
 
