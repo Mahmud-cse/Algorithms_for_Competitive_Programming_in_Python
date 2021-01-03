@@ -1,6 +1,6 @@
 from collections import deque
 
-def isBipartite(adj_list, n):
+def canBipartite(adj_list, n):
     """
         vertices are numbered from 0 , 1 ...to n - 1
         Return True if we can color the n vertices with 2 colors, 
@@ -44,11 +44,11 @@ def isBipartite(adj_list, n):
 
 n = 3
 adj_list = [[1,2],[0,2],[0]]
-print(isBipartite(adj_list, n))
+print(canBipartite(adj_list, n))
 
 n = 4
 adj_list = [[1],[0],[3],[2]]
-print(isBipartite(adj_list, n))
+print(canBipartite(adj_list, n))
 
 #example of problem to solve with that:
 #https://www.spoj.com/problems/BUGLIFE/
