@@ -37,16 +37,17 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 ### Searching And Sorting
 
 1. <del>Binary Search</del>
-2. <del>Quick Sort</del>
-3. Merge Sort
-4. <del>Order Statistics</del>
-5. <del>KMP algorithm</del>
-6. <del>Rabin karp</del>
-7. Z’s algorithm
-8. <del>Aho Corasick String Matching</del>
-9. <del>Counting Sort</del>
-10. <del>Manacher’s algorithm: Part 1, Part 2 and Part 3</del>
-11. Insertion Sort
+2. Insertion Sort
+3. <del>Quick Sort</del>
+4. Merge Sort
+5. Count number of inversions
+6. <del>Order Statistics</del>
+7. <del>KMP algorithm</del>
+8. <del>Rabin karp</del>
+9. Z’s algorithm
+10. <del>Aho Corasick String Matching</del>
+11. <del>Counting Sort</del>
+12. <del>Manacher’s algorithm: Part 1, Part 2 and Part 3</del>
 
 ## Number theory and Other Mathematical
 
