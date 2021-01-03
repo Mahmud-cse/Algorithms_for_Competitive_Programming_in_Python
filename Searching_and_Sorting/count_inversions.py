@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# explanations : https://medium.com/@ssbothwell/counting-inversions-with-merge-sort-4d9910dc95f0
 import os, sys
 
 def mergeSortInversions(arr):
