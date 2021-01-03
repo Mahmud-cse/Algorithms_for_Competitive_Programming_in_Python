@@ -1,35 +1,34 @@
-from math import inf
-from collections import deque
+#!/usr/bin/env python
+#explanations: https://medium.com/@ssbothwell/counting-inversions-with-merge-sort-4d9910dc95f0
 
-def merge(aa, bb):
-	#needed otherwise deque(None) would return error
-	if not aa:
-		return bb
-	if not bb:
-		return aa
+def mergeSort(arr):
+    if len(arr) == 1:
+        return arr
+    else:
+        a = arr[:len(arr)//2]
+        b = arr[len(arr)//2:]        
 
-	qq1 = deque(aa)
-	qq2 = deque(bb)
-	result = []
-	while qq1  and qq2:
-		if qq1[0] <= qq2[0]:
-			result.append(qq1.popleft())
-		else:
-			result.append(qq2.popleft())
+        a = mergeSort(a)
+        b = mergeSort(b)
+        c = []        
 
-	result += list(qq1)
-	result += list(qq2)
-	return result
+        i = 0
+        j = 0        
+
+        while i < len(a) and j < len(b):
+            if a[i] < b[j]:
+                c.append(a[i])
+                i = i + 1
+            else:
+                c.append(b[j])
+                j = j + 1        
+
+        c += a[i:]
+        c += b[j:]    
+
+    return c
 
 
-def merge_sort(aa):
-	n = len(aa)
-	if n == 1:
-		return aa
-	return merge(merge_sort(aa[:n//2]), merge_sort(aa[n//2:]))
-
-
-aa = [8,12,3,5,4,55,12,5,99,99,101,98,1,2,7,1,54,11]
-print(aa)
-print(merge_sort(aa))
-
+#example use
+aa = [5,8,1,4,7,56,4,5,1,4,252,5,1]
+print(mergeSort(aa))
