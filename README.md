@@ -2,10 +2,10 @@
 
 The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will be crossed anymore:)
 
-### GraphAlgorithms
+### Graphs
 
 1. <del>Breadth First Search (BFS)</del>
-2. <del>Depth First Search (DFS)</del>
+2. Depth First Search (DFS)
 3. <del>Shortest Path from source to all vertices **Dijkstra**</del>
 4. <del>Shortest Path from every vertex to every other vertex **Floyd Warshall**</del>
 5. <del>Minimum Spanning tree **Prim**</del>
