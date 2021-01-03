@@ -4,7 +4,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 ### Graphs
 
-1. <del>Breadth First Search (BFS)</del>
+1. Breadth First Search (BFS)
 2. Depth First Search (DFS)
 3. <del>Shortest Path from source to all vertices **Dijkstra**</del>
 4. <del>Shortest Path from every vertex to every other vertex **Floyd Warshall**</del>
