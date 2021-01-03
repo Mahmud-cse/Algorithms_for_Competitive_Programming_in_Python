@@ -11,9 +11,10 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 5. <del>Minimum Spanning tree **Prim**</del>
 6. <del>Minimum Spanning tree **Kruskal**</del>
 7. <del>Topological Sort</del>
-8. <del>Johnson’s algorithm</del>
-9. <del>Articulation Points (or Cut Vertices) in a Graph</del>
-10. <del>Bridges in a graph</del>
+8. Color a graph with 2 colors ( = make it bipartite)
+9. <del>Johnson’s algorithm</del>
+10. <del>Articulation Points (or Cut Vertices) in a Graph</del>
+11. <del>Bridges in a graph</del>
 
 
 
