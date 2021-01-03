@@ -76,7 +76,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 #### Miscellaneous Algorithms
 
-1. <del>Counting Inversions</del>
+1. Counting Inversions
 2. <del>Counting Inversions using BIT</del>
 3. <del>logarithmic exponentiation</del>
 4. <del>Square root of an integer</del>
