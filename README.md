@@ -98,7 +98,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 4. <del>Interval Tree</del>
 5. <del>Matrix Exponentiation</del>
 6. <del>Maxflow Ford Furkerson Algo and Edmond Karp Implementation</del>
-7. Bipartite match
+7. Bipartite matching
 8. <del>Min cut</del>
 9. <del>Stable Marriage Problem</del>
 10. <del>Hopcroft–Karp Algorithm for Maximum Matching</del>
