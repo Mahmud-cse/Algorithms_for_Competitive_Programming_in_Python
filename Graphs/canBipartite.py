@@ -3,7 +3,7 @@ from collections import deque
 def canBipartite(adj_list, n):
     """
         vertices are numbered from 0 , 1 ...to n - 1
-        Return True if we can color the n vertices with 2 colors, 
+        Return a tuple (True, coloring) if we can color the n vertices with 2 colors, 
         given than vertices on both sides of an edge must have different colors.
         We use BFS for that
     """
@@ -16,6 +16,7 @@ def canBipartite(adj_list, n):
 
         #####everyhting after this could be put in a separate function if we wanted to#####
 
+        #visited is also used to track the 2 colors, 1 and -1
         if not visited[start]:
             queue.append(start)
             visited[start] = 1 #here we could also assign -1 to the starting vertex of this connected component, doesnt matter 
@@ -26,7 +27,7 @@ def canBipartite(adj_list, n):
 
             # Return false if there is a self-loop 
             if u in adj_list[u]: 
-                return False
+                return False, []
 
             for v in (adj_list[u]): 
                 if not visited[v]: 
@@ -36,9 +37,9 @@ def canBipartite(adj_list, n):
                     queue.append(v) 
 
                 elif visited[v] == visited[u]: 
-                    return False
+                    return False, []
 
-    return True
+    return True, visited
 
 #example use
 
@@ -52,3 +53,6 @@ print(canBipartite(adj_list, n))
 
 #example of problem to solve with that:
 #https://www.spoj.com/problems/BUGLIFE/
+
+#https://codeforces.com/contest/445/problem/A
+#solution: https://codeforces.com/contest/445/submission/103170939
