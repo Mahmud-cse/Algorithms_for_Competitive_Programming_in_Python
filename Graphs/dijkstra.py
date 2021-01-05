@@ -39,3 +39,6 @@ def dijkstra(graph, weight, source=0, target=None):
                     prec[neighbor] = node
                     heappush(heap, (dist_neighbor, neighbor))
     return dist, prec
+
+#example :
+#https://codeforces.com/contest/20/problem/C
