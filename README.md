@@ -6,7 +6,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 1. Breadth First Search (BFS)
 2. Depth First Search (DFS)
-3. <del>Shortest Path from source to all vertices **Dijkstra**</del>
+3. Shortest Path from source to all vertices **Dijkstra**
 4. <del>Shortest Path from every vertex to every other vertex **Floyd Warshall**</del>
 5. <del>Minimum Spanning tree **Prim**</del>
 6. <del>Minimum Spanning tree **Kruskal**</del>
