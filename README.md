@@ -6,6 +6,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 1. Breadth First Search (BFS)
 2. Depth First Search (DFS)
+2. <del>DFS Tree: (https://codeforces.com/blog/entry/68138)</del>
 3. Count number of connected components
 4. Shortest Path from source to all vertices **Dijkstra**
 5. <del>Shortest Path from every vertex to every other vertex **Floyd Warshall**</del>
