@@ -6,15 +6,16 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 1. Breadth First Search (BFS)
 2. Depth First Search (DFS)
-3. Shortest Path from source to all vertices **Dijkstra**
-4. <del>Shortest Path from every vertex to every other vertex **Floyd Warshall**</del>
-5. <del>Minimum Spanning tree **Prim**</del>
-6. <del>Minimum Spanning tree **Kruskal**</del>
-7. <del>Topological Sort</del>
-8. Color a graph with 2 colors ( = make it bipartite)
-9. <del>Johnson’s algorithm</del>
-10. <del>Articulation Points (or Cut Vertices) in a Graph</del>
-11. <del>Bridges in a graph</del>
+3. Count number of connected components
+4. Shortest Path from source to all vertices **Dijkstra**
+5. <del>Shortest Path from every vertex to every other vertex **Floyd Warshall**</del>
+6. <del>Minimum Spanning tree **Prim**</del>
+7. <del>Minimum Spanning tree **Kruskal**</del>
+8. <del>Topological Sort</del>
+9. Color a graph with 2 colors ( = make it bipartite)
+10. <del>Johnson’s algorithm</del>
+11. <del>Articulation Points (or Cut Vertices) in a Graph</del>
+12. <del>Bridges in a graph</del>
 
 
 
