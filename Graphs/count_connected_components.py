@@ -1,3 +1,9 @@
+"""
+We use DFS here to count the connected components
+There is another method using union find, see the example in Data_Structures/union_find.py
+"""
+
+
 from collections import *
 """
 It is a little bit heavy, need 2 functions
