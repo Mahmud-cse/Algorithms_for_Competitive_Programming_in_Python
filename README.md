@@ -108,6 +108,8 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 ### Data Structures
 
+1. Heap
+2. Union Find
 1. <del> Binary Indexed Tree or Fenwick tree</del>
 2. <del>Segment Tree (RMQ, Range Sum and Lazy Propagation)</del>
 3. <del>K-D tree (See insert, minimum and delete)</del>
