@@ -177,12 +177,13 @@ class BST(object):
 bst = BST()
 bst.insert(5)
 bst.insert(4)
-#the next line doest do anything
+#the next line doest do anything because element already in bst
 bst.insert(4)
 
 #removing a value not in the tree does nothing
 isFalse = bst.remove(123456789)
 print(isFalse) #False
+
 bst.insert(7)
 sorted_list = bst.inorder()
 print(sorted_list)
