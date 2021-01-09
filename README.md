@@ -71,7 +71,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 1. <del>Basic and Extended Euclidean algorithms</del>
 2. <del>Euler’s Totient Function</del>
-3. <del>Modular Exponentiation</del>
+3. Modular Exponentiation
 4. <del>Modular Multiplicative Inverse</del>
 5. <del>Chinese remainder theorem and Modulo Inverse Implementation</del>
 6. <del>nCr%m</del>
