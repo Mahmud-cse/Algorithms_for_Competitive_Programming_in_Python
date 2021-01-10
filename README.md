@@ -135,3 +135,5 @@ Source @ http://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-com
 
 This github repo is amazing:
 https://github.com/cheran-senthil/PyRival
+
+should also have a look at David Eppstein, who has very elegant and very readable python code on algorithms. (go to Google and search: Eppstein PADS)
