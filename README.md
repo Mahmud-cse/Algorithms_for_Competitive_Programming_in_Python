@@ -74,7 +74,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 3. Modular Exponentiation
 4. <del>Modular Multiplicative Inverse</del>
 5. <del>Chinese remainder theorem and Modulo Inverse Implementation</del>
-6. <del>nCr%m</del>
+6. Binomial coeficients, modulo calculation
 
 #### Miscellaneous Algorithms
 
