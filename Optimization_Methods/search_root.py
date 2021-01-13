@@ -58,9 +58,9 @@ def secant(f, a, b, tol):
 	fb = f(b)
 	while abs(fb) > tol:	
 		rope = (fb - fa) / (b - a)
-		if rope == 0:
+		if slope == 0:
 			break
-		c = b - fb /rope
+		c = b - fb /slope
 		# now a moves to b and b moves to c
 		a = b
 		fa = fb
@@ -84,10 +84,10 @@ def newton(f, g, a, tol):
 	fa = f(a)
 
 	while abs(fa) > tol:	
-		rope = g(a)
-		if rope == 0:
+		slope = g(a)
+		if slope == 0:
 			break
-		b = a - fa /rope
+		b = a - fa /slope
 		# now a moves to b
 		a = b
 		fa = f(a)
