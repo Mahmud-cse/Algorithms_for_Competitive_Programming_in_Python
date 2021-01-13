@@ -134,9 +134,10 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 ### Optimization Methods
 
-1. Root search using bisection
-2. Ternary search (for unimodal function)
-3. Golden section (for unimodal function)
+1. Root search (bisection, secant, Newton)
+2. Newton method for minimum finding
+3. Ternary search (for unimodal function)
+4. Golden section (for unimodal function)
 
 Source @ http://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
 <br> Idea from https://github.com/haikentcode/top10algoritms
