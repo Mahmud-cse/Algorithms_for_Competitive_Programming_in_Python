@@ -58,3 +58,5 @@ def ternary_search_not_discrete(f, a, b, tol):
 			a  = c
 
 	return a
+#example:
+#https://codeforces.com/contest/1354/problem/C2
