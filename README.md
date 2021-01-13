@@ -124,12 +124,19 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 10. <del>LCA and RMQ</del>
 
 ### Approximate sequence matching
+
 1. <del>Bitap algorithm</del>
 2. <del>Phonetic algorithms</del>
 3. <del>Daitch–Mokotoff Soundex</del>
 4. <del>String metrics</del>
 5. <del>Damerau–Levenshtein distance</del></del>
 6. <del>Trigram search</del>
+
+### Optimization Methods
+
+1. Root search using bisection
+2. Ternary search (for unimodal function)
+3. Golden section (for unimodal function)
 
 Source @ http://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
 <br> Idea from https://github.com/haikentcode/top10algoritms
