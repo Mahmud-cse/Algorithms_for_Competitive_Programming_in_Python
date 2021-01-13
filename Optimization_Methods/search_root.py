@@ -55,11 +55,10 @@ def secant(f, a, b, tol):
 	"""
 	fa = f(a)
 	fb = f(b)
-	while abs(f(b)) > tol:
-		# if (b < a):
-		# 	a, fa, b, fb = b, fb, a, fa
-		
+	while abs(fb) > tol:	
 		rope = (fb - fa) / (b - a)
+		if rope == 0:
+			break
 		c = b - fb /rope
 		# now a moves to b and b moves to c
 		a = b
@@ -70,13 +69,42 @@ def secant(f, a, b, tol):
 
 	return b
 
+def newton(f, g, a, tol):
+	"""
+	g is just the derivate of f
+	a is just a starting point. Pick it close to the root you want
+	and we need f'(a) != 0 
+
+	algo: we create a sequence x0, x1, ...xn, starting
+	with x0 = a and xn converges to the root.
+	In this implementation, at each step we just need 
+	to store the last element that we call a
+	"""
+	fa = f(a)
+
+	while abs(fa) > tol:	
+		rope = g(a)
+		if rope == 0:
+			break
+		b = a - fa /rope
+		# now a moves to b
+		a = b
+		fa = f(a)
+
+	return a
+
 #example use
 def f(x):
 	return x**2 - 9
+
+def g(x):
+	return 2 * x
+
 tol =  1/ (10**6)
 a = 2
 b = 4
 print(secant(f, a, b, tol))
 print(bisection(f, a, b, tol))
+print(newton(f, g, a, tol))
 	
 
