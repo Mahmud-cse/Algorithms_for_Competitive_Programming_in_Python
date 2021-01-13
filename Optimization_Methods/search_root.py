@@ -9,12 +9,13 @@ BECAUSE:
 -Newton needs derivative, sometimes we dont want/have it
 -Newton and secant are not guaranteed to converge, Bisection method is
 So we need to know the 3 methods
-
-
-
-find the root of a function on a segment [a,b]
 """
 def bisection(f, a, b, tol):
+	"""
+	find the root of a function on a segment [a,b]
+	if it exists inside the segment
+	and if f(a) and f(b) have different signs
+	"""
 	low = a
 	high = b
 
