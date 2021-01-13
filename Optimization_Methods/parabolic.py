@@ -29,7 +29,7 @@ def parabolic_interpolations(f, a, b, tol):
     fa = f(a)
     fb = f(b)
     fc = f(c)
-    while abs(fb - fa) > tol:
+    while abs(fc - fa) > tol:
         x = [a,b,c]
         y  = [fa, fb, fc]
         A,B,C = parabola_coefficients(x,y)
