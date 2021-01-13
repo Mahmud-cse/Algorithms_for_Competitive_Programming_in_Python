@@ -1,3 +1,8 @@
+"""
+we iteratively chose 3 points, draw a parabola, find the minimum of that parabola
+then now we have 4 points, we take the 3 with the smalest values and iterate
+"""
+
 
 def parabola_coefficients(x,y):
     x_1 = x[0]
@@ -38,6 +43,22 @@ def parabolic_interpolations(f, a, b, tol):
 
     return a
 
+#example use
+
+#testcase 1
+from math import sin
+a = 2.
+b = 7.
+tol = 0.000001
+f = sin
 result = parabolic_interpolations(f, a, b, tol)
-print(result)
+print(result) #4.712388985743289
+
+#testcase 2
+f = lambda x: x**1.8 - 15*x + 4
+a = 2.
+b = 30.
+tol = 0.000001
+result = parabolic_interpolations(f, a, b, tol)
+print(result) # 14.158702029267767
 
