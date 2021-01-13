@@ -1,3 +1,9 @@
+"""
+good explanation here:
+https://cp-algorithms.com/num_methods/ternary_search.html
+https://www.youtube.com/watch?v=7h86n97naH4
+"""
+
 def ternary_search_discrete(f, a, b):
 	"""
 	input: a function that decreases first and increases after
