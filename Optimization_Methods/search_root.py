@@ -57,7 +57,7 @@ def secant(f, a, b, tol):
 	fa = f(a)
 	fb = f(b)
 	while abs(fb) > tol:	
-		rope = (fb - fa) / (b - a)
+		slope = (fb - fa) / (b - a)
 		if slope == 0:
 			break
 		c = b - fb /slope
@@ -67,24 +67,25 @@ def secant(f, a, b, tol):
 		b = c
 		fb = f(b)
 
-
 	return b
 
-def newton(f, g, a, tol):
+
+
+def newton(f, df, a, tol):
 	"""
-	g is just the derivate of f
+	df is the derivate of f (can be simple numerical approximation)
 	a is just a starting point. Pick it close to the root you want
 	and we need f'(a) != 0 
 
-	algo: we create a sequence x0, x1, ...xn, starting
-	with x0 = a and xn converges to the root.
+	algo: we create a sequence x_0, x_1, ...x_n, starting
+	with x_0 = a and xn converges to the root.
 	In this implementation, at each step we just need 
-	to store the last element that we call a
+	to store the last element x_n as the point a
 	"""
 	fa = f(a)
 
 	while abs(fa) > tol:	
-		slope = g(a)
+		slope = df(a)
 		if slope == 0:
 			break
 		b = a - fa /slope
@@ -98,14 +99,21 @@ def newton(f, g, a, tol):
 def f(x):
 	return x**2 - 9
 
-def g(x):
-	return 2 * x
+def df(x):
+	"""
+	approximate the derivate of f
+	we could also put here the exact symbolic 
+	when it is easy to calculate 
+	(here the derivate is just f'(x) = 2*x 
+	but it could be a very complicated function)
+	"""
+	return (f(x + tol) - f(x - tol)) / (2 * tol)
 
 tol =  1/ (10**6)
 a = 2
 b = 4
 print(secant(f, a, b, tol))
 print(bisection(f, a, b, tol))
-print(newton(f, g, a, tol))
+print(newton(f, df, a, tol))
 	
 

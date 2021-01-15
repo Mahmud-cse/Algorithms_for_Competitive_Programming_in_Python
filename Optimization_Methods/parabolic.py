@@ -1,18 +1,37 @@
 """
-we iteratively chose 3 points, draw a parabola, find the minimum of that parabola
-then now we have 4 points, we take the 3 with the smalest values and iterate
+Successive parabolic interpolations:
+
+    We iteratively chose 3 points, draw a parabola y = Ax^2 + Bx + C 
+    find the minimum point of that parabola (-B/2A)
+    Then now we have 4 points (3 initial point and that minimum), 
+    we keep the 3 points with the smalest values out of the 4
+    for next iteration
+
+Side notes:
+Note that the parabola we chose depends on our coordinate system
+for 3 given points in the plane, we could find another parabola
+x = Dy^2 + Ey + F
+or we could find many other parabola with different angles
+
+Also note that we did find the parameters A,B and C
+of the parabola using Lagrange polynomial:
+https://en.wikipedia.org/wiki/Lagrange_polynomial
 """
 
 
 def parabola_coefficients(x,y):
-    x_1 = x[0]
-    x_2 = x[1]
-    x_3 = x[2]
-    y_1 = y[0]
-    y_2 = y[1]
-    y_3 = y[2]
+    """
+    returns the coeficients (A,B,C)of the parabola Ax^2 + Bx + C
+    that contains the 3 poins of coordinate x, y
+    input: x is a 3-tuple containing x-axis coordinates
+    and y is a 3-tuple containing y-axis coordinates
+    """
+    x_1, x_2, x_3 = x
+    y_1, y_2, y_3 = y
 
-    A = y_1/((x_1-x_2)*(x_1-x_3)) + y_2/((x_2-x_1)*(x_2-x_3)) + y_3/((x_3-x_1)*(x_3-x_2))
+    A = y_1/((x_1-x_2)*(x_1-x_3))   \
+        + y_2/((x_2-x_1)*(x_2-x_3)) \
+        + y_3/((x_3-x_1)*(x_3-x_2))
 
     B = (-y_1*(x_2+x_3)/((x_1-x_2)*(x_1-x_3))
          -y_2*(x_1+x_3)/((x_2-x_1)*(x_2-x_3))
@@ -25,11 +44,17 @@ def parabola_coefficients(x,y):
     return A, B, C
 
 def parabolic_interpolations(f, a, b, tol):
+    """
+    We iteratively chose 3 points, draw a parabola y = Ax^2 + Bx + C 
+    find the minimum point of that parabola (-B/2A)
+    Then now we have 4 points (3 initial point and that minimum), 
+    we keep the 3 points with the smalest values out of the 4
+    for next iteration
+    """
     c = (a + b) / 2
-    fa = f(a)
-    fb = f(b)
-    fc = f(c)
-    while abs(fc - fa) > tol:
+    fa, fb, fc = f(a), f(b), f(c)
+
+    while abs(fb - fa) > tol:
         x = [a,b,c]
         y  = [fa, fb, fc]
         A,B,C = parabola_coefficients(x,y)
@@ -38,8 +63,8 @@ def parabolic_interpolations(f, a, b, tol):
         points = [(fa, a), (fb, b), (fc, c), (fmini, mini)]
         points.sort()
         fa, a = points[0]
-        fb, b = points[1]
-        fc, c = points[2]
+        fc, c = points[1]
+        fb, b = points[2]
 
     return a
 
