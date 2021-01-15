@@ -56,7 +56,8 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 
 #### Prime Numbers and Prime Factorization
 
-0. Gcd of 2 numbers using Euclid algorithm
+0. Gcd  (Euclid algorithm)
+1. Lcm
 1. <del>Primality Test </del>
   1. <del>Set 1 (Introduction and School Method)</del>
   2. <del>Set 2 (Fermat Method)</del>
