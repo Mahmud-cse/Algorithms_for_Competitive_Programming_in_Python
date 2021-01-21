@@ -9,8 +9,22 @@ BECAUSE:
 -Newton needs derivative, sometimes we dont want/have it
 -Newton and secant are not guaranteed to converge, Bisection method is
 So we need to know the 3 methods
+
+In all those algos, we add a max_iter condition to be sure we avoid
+infinite loop and to control the time of execution
+
+If you are using Newton or secant method
+trying to find a root in a specific interval
+a good idea is to plot the function on WolframAlpha
+to chose a good starting point for the algorithm
+
+for example, in the testcase below, we
+apply newton to the midpoint of the interval
+and i believe applying to the extremities wouldnt work
 """
-def bisection(f, a, b, tol):
+
+from math import inf
+def bisection(f, a, b, tol, max_iter = 1000):
 	"""
 	find the root of a function on a segment [a,b]
 	if it exists inside the segment
@@ -28,8 +42,9 @@ def bisection(f, a, b, tol):
 
 	if (b-a) <= tol:
 		return (a + b)/2
-
-	while (high - low) > tol:
+	step = 0
+	while (high - low) > tol*tol and step < max_iter:
+		step += 1
 		mid = (low + high) / 2
 		#we save this val to just do one function call
 		#instead of two
@@ -43,7 +58,7 @@ def bisection(f, a, b, tol):
 
 	return mid
 
-def secant(f, a, b, tol):
+def secant(f, a, b, tol, max_iter = 1000):
 	"""
 	a and b are just the 2 starting points. The root doesnt have to be inside 
 	the segment [a,b]
@@ -56,22 +71,35 @@ def secant(f, a, b, tol):
 	"""
 	fa = f(a)
 	fb = f(b)
-	while abs(fb) > tol:	
+	assert fa != fb
+	step = 0
+	while abs(b-a) > tol*tol and step < max_iter:
+		step += 1	
+		if a == b:
+			break
 		slope = (fb - fa) / (b - a)
 		if slope == 0:
 			break
 		c = b - fb /slope
+		fc = f(c)
 		# now a moves to b and b moves to c
-		a = b
-		fa = fb
-		b = c
-		fb = f(b)
+		a, fa, b, fb = b, fb, c, fc
 
 	return b
 
 
+def df(x, epsilon):
+	"""
+	approximate the derivate of f
+	we could also put here the exact symbolic 
+	when it is easy to calculate 
+	(here the derivate is just f'(x) = 2*x 
+	but it could be a very complicated function)
+	"""
+	return (f(x + epsilon) - f(x - epsilon)) / (2 * epsilon)
 
-def newton(f, df, a, tol):
+
+def newton(f, df, a, tol, max_iter = 1000):
 	"""
 	df is the derivate of f (can be simple numerical approximation)
 	a is just a starting point. Pick it close to the root you want
@@ -83,37 +111,33 @@ def newton(f, df, a, tol):
 	to store the last element x_n as the point a
 	"""
 	fa = f(a)
-
-	while abs(fa) > tol:	
-		slope = df(a)
+	move = inf # just to avoid triggerrig the initial while loop
+	step = 0
+	while abs(move) > tol*tol and step < max_iter:
+		step += 1
+		slope = df(a, tol*tol)
 		if slope == 0:
 			break
-		b = a - fa /slope
-		# now a moves to b
-		a = b
+		move  = - fa /slope
+		a = a + move
 		fa = f(a)
 
 	return a
 
-#example use
-def f(x):
-	return x**2 - 9
+#example testcase
+################################
+from math import sqrt, sin
+a = .01
+b = 1.
+tol = 0.00001
+f = lambda x: sqrt(x)-2*sin(x)
+################################
 
-def df(x):
-	"""
-	approximate the derivate of f
-	we could also put here the exact symbolic 
-	when it is easy to calculate 
-	(here the derivate is just f'(x) = 2*x 
-	but it could be a very complicated function)
-	"""
-	return (f(x + tol) - f(x - tol)) / (2 * tol)
 
-tol =  1/ (10**6)
-a = 2
-b = 4
-print(secant(f, a, b, tol))
-print(bisection(f, a, b, tol))
-print(newton(f, df, a, tol))
+
+max_iter = 1000
+print(secant(f, a, b, tol, max_iter))
+print(bisection(f, a, b, tol, max_iter))
+print(newton(f, df, (a + b)/ 2, tol, max_iter))
 	
 
