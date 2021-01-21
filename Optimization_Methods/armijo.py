@@ -98,8 +98,8 @@ b = 7.
 tol = 0.000001
 f = sin
 
-mini  = armijo(f, a, b, tol, 0.8, 3)
-print(mini)
+mini, step  = armijo(f, a, b, tol, 0.8, 3)
+print(f"Minimum of f is: {mini}, and we needed {step} steps.")
 
 #testcase 2:
 from math import sin
@@ -108,6 +108,6 @@ a = 2.
 b = 30.
 tol = 0.000001
 
-mini  = armijo(f, a, b, tol, 0.8, 3)
-print(mini)
+mini, step  = armijo(f, a, b, tol, 0.8, 3)
+print(f"Minimum of f is: {mini}, and we needed {step} steps.")
 
