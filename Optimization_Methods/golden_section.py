@@ -1,42 +1,64 @@
+#number of steps : about 30 steps for both testcases
+
 """
 Assuming we are given a function f, 
-that is unimodal(only one minumum on [a,b])
+that is unimodal(only one minimum on [a,b])
 we can use this algorithm to find the min
 
-Note that the algo is written such that there is only one 
-call to f per iteration of the while loop (thanks to golden ratio)
+Golden Search Algo:
+At each step, given a and b, we want to check the value of f
+at intermediary points c and d inside [a,b] (ternary search)
+The choice of c and d depending on golden ratio
+saves us one function call at each iteration,
+because amongst the new values of c and d, either
+c is actually the previous d or d is the previous c
 """
+
 from math import sqrt
 
-def golden_section(f, a, b, tol):
-    alpha  = (3 - sqrt(5)) / 2
+def golden_ratio(f, a, b, tol, max_iter = 1000):
+    phi = (1 + sqrt(5)) / 2
+    alpha  = 1 / phi
+    c = alpha * a + (1 - alpha) * b
+    d = (1 - alpha) * a + alpha * b
+    step = 0
 
-    c = (1 - alpha) * a + alpha * b
-    d = alpha * a + (1 - alpha) * b
-    fa = f(a)
-    fb = f(b)
-    fc = f(c)
-    fd = f(d)
+    fa, fb, fc, fd = f(a), f(b), f(c), f(d)
 
-    while (b - a) > tol:
+    while (b - a) > tol and step < max_iter:
+        step += 1
         if fc < fd:
-            # b moves to d and c becomes the new d on [a, b = old_d]
-            b = d
-            fb = fd
-            d = c
-            fd = fc
-
-            c = (1 - alpha) * a + alpha * b
-            fc  = f(c)
+            #b moves to d, d moves to c
+            b, fb, d, fd = d, fd, c, fc
+            c = alpha * a + (1 - alpha) * b
+            fc= f(c)
         else:
-            a = c
-            fa = fc
-            c = d
-            fc = fd
-            d = alpha * a + (1 - alpha) * b
+            #a moves to c, c moves to d
+            a, fa, c, fc = c, fc, d, fd
+            d = (1 - alpha) * a + alpha * b
             fd = f(d)
-    return a
+    return c, step
 
 
 
+######################
+# Sample Input 1:
+from math import sin
+a = 2.
+b = 7.
+tol = 0.000001
+f = sin
+######################
 
+######################
+# Sample Input 2:
+f = lambda x: x**1.8 - 15*x + 4
+a = 2.
+b = 30.
+tol = 0.000001
+######################
+
+
+mini, step = golden_ratio(f, a, b, tol, max_iter = 1000)
+print(mini)
+print(f"the number of steps required is {step}") #36
