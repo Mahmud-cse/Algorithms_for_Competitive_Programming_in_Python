@@ -43,7 +43,12 @@ def solve_system_equations(A, b, tol, alpha, eta , xi, max_iter = 200000):
     def gradf(x, fx):
         return 2* np.dot(np.transpose(A), np.dot(A, x) - b)
 
-    return nesterov(f, gradf, n, alpha, eta, xi, max_iter)
+    mini, step =  nesterov(f, gradf, n, alpha, eta, xi, max_iter)
+    fmin = f(mini)
+    if fmin > tol:
+        print(f"minimum of f is {fmin}. It should be almost zero.")
+        print(f"If it is not close to zero, the system has no solutions.")
+    return fmin, mini, step
 
 
 #hyperparameters
@@ -51,6 +56,7 @@ alpha = 0.01
 xi = 0.9
 eta = 0.8
 
-mini, step = solve_system_equations(A, b, tol, alpha, eta , xi, max_iter = 200000)
-print(" ".join([str(x) for x in mini]))
-print(step)
+fmin, mini, step = solve_system_equations(A, b, tol, alpha, eta , xi, max_iter = 200000)
+print("Solution of the system:", " ".join([str(x) for x in mini]))
+print("Corresponding value of f(should be almost zero if solution):", fmin)
+print(f"Number of steps: {step}")

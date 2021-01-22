@@ -23,7 +23,7 @@ def golden_ratio(f, a, b, tol, max_iter = 1000):
     d = (1 - alpha) * a + alpha * b
     step = 0
 
-    fa, fb, fc, fd = f(a), f(b), f(c), f(d)
+    fc, fd = f(c), f(d)
 
     while (b - a) > tol and step < max_iter:
         step += 1
