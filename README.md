@@ -51,6 +51,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 10. <del>Aho Corasick String Matching</del>
 11. <del>Counting Sort</del>
 12. <del>Manacher’s algorithm: Part 1, Part 2 and Part 3</del>
+13. Query duplicates in a range
 
 ## Number theory and Other Mathematical
 
