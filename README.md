@@ -1,6 +1,6 @@
 # Algorithms_for_Competitive_Programming_in_Python
 
-The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will be crossed anymore:)
+The Algorithms crossed in the list below are not in this repo yet. Hopefully one day, nothing will be crossed anymore:)
 
 ### Graphs
 
