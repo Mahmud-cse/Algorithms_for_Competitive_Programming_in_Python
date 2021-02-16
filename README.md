@@ -133,7 +133,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 5. <del>Damerau–Levenshtein distance</del></del>
 6. <del>Trigram search</del>
 
-### Optimization Methods
+### Function Optimization and Root Finding
 
 1. Root search (bisection, secant, Newton)
 2. Newton method for minimum finding
