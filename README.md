@@ -147,3 +147,6 @@ This github repo is amazing:
 https://github.com/cheran-senthil/PyRival
 
 should also have a look at David Eppstein, who has very elegant and very readable python code on algorithms. (go to Google and search: Eppstein PADS)
+
+if you want to implement Travelling salesman problem, you should probably have a look at this nice implementation from Google:
+https://developers.google.com/optimization/routing/tsp
