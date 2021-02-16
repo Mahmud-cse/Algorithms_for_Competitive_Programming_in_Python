@@ -1,6 +1,6 @@
 # Algorithms_for_Competitive_Programming_in_Python
 
-The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will be crossed anymore:)
+The Algorithms crossed in the list below are not in this repo yet. Hopefully one day, nothing will be crossed anymore:)
 
 ### Graphs
 
@@ -133,7 +133,7 @@ The Algorithms crossed are not in this repo yet. Hopefully one day, nothing will
 5. <del>Damerau–Levenshtein distance</del></del>
 6. <del>Trigram search</del>
 
-### Optimization Methods
+### Function Optimization and Root Finding
 
 1. Root search (bisection, secant, Newton)
 2. Newton method for minimum finding
