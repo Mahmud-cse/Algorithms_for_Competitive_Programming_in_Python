@@ -11,7 +11,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 4. [Shortest Path from source to all vertices **Dijkstra**](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Graphs/dijkstra.py)
 5. <del>Shortest Path from every vertex to every other vertex **Floyd Warshall**</del>
 6. <del>Minimum Spanning tree **Prim**</del>
-7. <del>Minimum Spanning tree **Kruskal**</del>
+7. [Minimum Spanning tree **Kruskal**](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Graphs/kruskal.py)
 8. <del>Topological Sort</del>
 9. [Color a graph with 2 colors ( = make it bipartite)](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Graphs/canBipartite.py)
 10. <del>Johnson’s algorithm</del>
