@@ -42,3 +42,6 @@ def dijkstra(graph, weight, source=0, target=None):
 
 #example :
 #https://codeforces.com/contest/20/problem/C
+
+#https://atcoder.jp/contests/abc192/tasks/abc192_e
+#https://atcoder.jp/contests/abc192/submissions/20360952
