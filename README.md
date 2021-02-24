@@ -52,6 +52,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 11. [Counting Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/counting_sort.py)
 12. <del>Manacher’s algorithm: Part 1, Part 2 and Part 3</del>
 13. [Query duplicates in a range](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/query_duplicates_in_a_range.py)
+14. <del>Rolling Hash</del>
 
 ## Number theory and Other Mathematical
 
