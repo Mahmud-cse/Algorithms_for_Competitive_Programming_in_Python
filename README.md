@@ -39,7 +39,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 
 ### Searching And Sorting
 
-1. <del>Binary Search</del>
+1. [Binary Search](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/binary_search.py)
 2. [Insertion Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/insertion_sort.py)
 3. <del>Quick Sort</del>
 4. [Merge Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/merge_sort.py)
