@@ -115,7 +115,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 1. [Heap](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/our_heap.py)
 2. [Union Find](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/union_find.py)
 3. [BST](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/bst.py)
-1. <del> Binary Indexed Tree or Fenwick tree</del>
+1. [Binary Indexed Tree or Fenwick tree](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/fenwick.py)
 2. <del>Segment Tree (RMQ, Range Sum and Lazy Propagation)</del>
 3. <del>K-D tree (See insert, minimum and delete)</del>
 4. <del>Union Find Disjoint Set (Cycle Detection and By Rank and Path Compression)</del>
