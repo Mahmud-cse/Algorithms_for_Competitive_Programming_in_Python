@@ -40,7 +40,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 ### Searching And Sorting
 
 1. [Binary Search](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/binary_search.py)
-2. [x in sorted list or not](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/tree/main/Searching_and_Sorting)
+2. [Check if number x is present or not in a given sorted list](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/tree/main/Searching_and_Sorting)
 3. [Insertion Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/insertion_sort.py)
 4. <del>Quick Sort</del>
 5. [Merge Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/merge_sort.py)
