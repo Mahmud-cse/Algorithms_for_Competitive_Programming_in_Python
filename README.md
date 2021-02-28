@@ -40,19 +40,20 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 ### Searching And Sorting
 
 1. [Binary Search](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/binary_search.py)
-2. [Insertion Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/insertion_sort.py)
-3. <del>Quick Sort</del>
-4. [Merge Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/merge_sort.py)
-5. [Count number of inversions](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/count_inversions.py)
-6. <del>Order Statistics</del>
-7. <del>KMP algorithm</del>
-8. <del>Rabin karp</del>
-9. [Z’s algorithm](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/z_algorithm.py)
-10. <del>Aho Corasick String Matching</del>
-11. [Counting Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/counting_sort.py)
-12. <del>Manacher’s algorithm: Part 1, Part 2 and Part 3</del>
-13. [Query duplicates in a range](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/query_duplicates_in_a_range.py)
-14. <del>Rolling Hash</del>
+2. [x in sorted list or not](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/tree/main/Searching_and_Sorting)
+3. [Insertion Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/insertion_sort.py)
+4. <del>Quick Sort</del>
+5. [Merge Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/merge_sort.py)
+6. [Count number of inversions](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/count_inversions.py)
+7. <del>Order Statistics</del>
+8. <del>KMP algorithm</del>
+9. <del>Rabin karp</del>
+10. [Z’s algorithm](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/z_algorithm.py)
+11. <del>Aho Corasick String Matching</del>
+12. [Counting Sort](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/counting_sort.py)
+13. <del>Manacher’s algorithm: Part 1, Part 2 and Part 3</del>
+14. [Query duplicates in a range](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Searching_and_Sorting/query_duplicates_in_a_range.py)
+15. <del>Rolling Hash</del>
 
 ## Number theory and Other Mathematical
 
