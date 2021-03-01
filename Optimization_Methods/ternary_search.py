@@ -40,12 +40,14 @@ def ternary_search_discrete(f, a, b):
 
 	return (a, b)
 
-def ternary_search_not_discrete(f, a, b, tol):
+def ternary_search_not_discrete(f, a, b, tol, max_iter):
 	"""
 	we assume that f is stricly decreasing then strictly 
 	increasing on [a,b]
 	"""
-	while (b - a) >= tol:
+	step = 0
+	while step < max_iter and (b - a) >= tol:
+		step += 1
 		alpha = 1/3
 		c = (1-alpha) * a + alpha * b
 		d  = alpha * a + (1 - alpha) * b
