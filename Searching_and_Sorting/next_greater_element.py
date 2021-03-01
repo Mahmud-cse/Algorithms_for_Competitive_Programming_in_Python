@@ -53,7 +53,7 @@ def indexes_of_next_greater_or_equal(aa):
 		stack.append(i)
 	return result
 
-def indexes_of_previous_stricly_ greater(aa):
+def indexes_of_previous_stricly_greater(aa):
 	"""
 	returns an array of indexes
 	indexes = -1 in that array means that there is not greater element on the left
@@ -99,3 +99,4 @@ def indexes_of_previous_greater_or_equal(aa):
 
 #example problem:
 #https://codeforces.com/group/PMzrLJM5Tw/contest/317834/problem/I
+#https://codeforces.com/group/PMzrLJM5Tw/contest/317834/problem/J
