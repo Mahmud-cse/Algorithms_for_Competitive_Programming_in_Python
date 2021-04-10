@@ -66,7 +66,7 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
   1. <del>Set 1 (Introduction and School Method)</del>
   2. <del>Set 2 (Fermat Method)</del>
   3. <del>Set 3 (Miller–Rabin)</del>
-2. <del>Sieve of Eratosthenes</del>
+2. [Sieve of Eratosthenes (and other similar precomputations)](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Number_theory_and_Other_Mathematical/Prime_number_and_Prime_Factorization/sieves.py)
 3. <del>Segmented Sieve</del>
 4. <del>Wilson’s Theorem - P</del>
 5. [Prime Factorisation](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Number_theory_and_Other_Mathematical/Prime_number_and_Prime_Factorization/prime_factorization.py)
@@ -117,16 +117,17 @@ The Algorithms crossed in the list below are not in this repo yet. Hopefully one
 1. [Heap](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/our_heap.py)
 2. [Union Find](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/union_find.py)
 3. [BST](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/bst.py)
-1. [Binary Indexed Tree or Fenwick tree](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/fenwick.py)
-2. <del>Segment Tree (RMQ, Range Sum and Lazy Propagation)</del>
-3. <del>K-D tree (See insert, minimum and delete)</del>
-4. <del>Union Find Disjoint Set (Cycle Detection and By Rank and Path Compression)</del>
-5. <del>Tries</del>
-6. <del>Suffix array (this, this and this)</del>
-7. <del>Sparse table</del>
-8. <del>Suffix automata</del>
-9. <del>Suffix automata II</del>
-10. <del>LCA and RMQ</del>
+4. [Binary Indexed Tree or Fenwick tree](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/fenwick.py)
+5. <del>Segment Tree (RMQ, Range Sum and Lazy Propagation)</del>
+6. [SortedList(can replace C++ set)](https://github.com/IAbeteEtMechante/Algorithms_for_Competitive_Programming_in_Python/blob/main/Data_Structures/sorted_list.py)
+7. <del>K-D tree (See insert, minimum and delete)</del>
+8. <del>Union Find Disjoint Set (Cycle Detection and By Rank and Path Compression)</del>
+9. <del>Tries</del>
+10. <del>Suffix array (this, this and this)</del>
+11. <del>Sparse table</del>
+12. <del>Suffix automata</del>
+13. <del>Suffix automata II</del>
+14. <del>LCA and RMQ</del>
 
 ### Approximate sequence matching
 
