@@ -3,31 +3,49 @@ there are many kind usefull precomputations grouped here
 """
 from math import sqrt
 
+"""
+two implementations or no square factorization below, both work
+"""
+
 def precompute_factorization_no_squares(N_MAX = 10**7 + 1):
-	"""
+  """
     output: a list, such that for each n <= N_MAX, if n = p1^e1*p2^e2...pk^ek, 
     then canonical_forms[n] = pi1 * pi2 *...* pij with only the pi such as ei is odd
     
-	See good explanation from neal E1: https://www.youtube.com/watch?v=WBcp1VRQGVk
+  See good explanation from neal E1: https://www.youtube.com/watch?v=WBcp1VRQGVk
+  or Errichto https://www.youtube.com/watch?v=rbF9RZl9WRc div2D (at 9 min in)
 
-	Remember the prime factorization of all numbers
-	if you want to check if some products of 2 numbers is a square or not
-	you can first reduce all numbers to a a canonical form which is their prime factorization
-	where you only keep the primes that have odd exposant (basically you take exposant mod 2)
-	example 8 becomes 2
-	2^6*3^153*5^1023 becomes 3*5
+  Remember the prime factorization of all numbers
+  if you want to check if some products of 2 numbers is a square or not
+  you can first reduce all numbers to a a canonical form which is their prime factorization
+  where you only keep the primes that have odd exposant (basically you take exposant mod 2)
+  example 8 becomes 2
+  2^6*3^153*5^1023 becomes 3*5
 
-	then 2 numbers product is a square iff they have the EXACT SAME canonical form
-	"""
-	squares = set([i*i for i in range(1, int(sqrt(N_MAX)))])
+  then 2 numbers product is a square iff they have the EXACT SAME canonical form
+  """
+  squares = [i*i for i in range(1, N_MAX)]
  
-	canonical_forms = [i for i in range(N_MAX)]
-	for i in range(1,N_MAX+1):
-	    if canonical_forms[i] == i:
-	        for sq in squares:
-	            if i*sq > N_MAX: break
-	            canonical_forms[i*sq] = i
-	return canonical_forms
+  canonical_forms = [i for i in range(N_MAX+1)]
+  for i in range(1,N_MAX+1):
+      if canonical_forms[i] == i:
+          for sq in squares:
+              if i*sq > N_MAX: break
+              canonical_forms[i*sq] = i
+  return canonical_forms
+
+
+
+def precompute_factorization_no_squares_2(N_MAX = 10**7 + 1):
+    no_square = list(range(N_MAX))
+    
+    for i in range(2,N_MAX):
+        square = i*i
+        for j in range(square,N_MAX,square):
+            no_square[j] = j//square
+    return no_square
+
+
 
 
 def precompute_count_of_prime_factors_and_the_largest_one(N = 2*10**7):
