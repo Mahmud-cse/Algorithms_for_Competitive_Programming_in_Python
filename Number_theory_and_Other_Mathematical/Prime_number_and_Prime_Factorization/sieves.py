@@ -21,7 +21,7 @@ def precompute_factorization_no_squares(N_MAX = 10**7 + 1):
 	"""
 	squares = set([i*i for i in range(1, int(sqrt(N_MAX)))])
  
-	canonical_forms = [i for i in range(10**7+1)]
+	canonical_forms = [i for i in range(N_MAX)]
 	for i in range(1,N_MAX+1):
 	    if canonical_forms[i] == i:
 	        for sq in squares:
