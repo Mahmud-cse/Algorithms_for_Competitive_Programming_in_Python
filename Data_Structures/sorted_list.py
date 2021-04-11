@@ -1,10 +1,21 @@
 """
-from conqueror of tourist
+from conqueror_of_tourist
 https://codeforces.com/contest/1418/submission/92822900
 
 i believe one of the strength of this structure 
 is to be able to insert in a sorted list in O(log n) using the add method
 same as set in C++ (set in C++ are ordered and can be inserted into in log n)
+
+It seems to be able to replace both set and multisets in C++, as in the submission above, Tourist uses
+a set and a multiset for the 2 data structures needed in that problem, but conqueror_of_tourist uses 
+this sorted list for both
+
+as a reminder, here are the properties of a multiset in C++ (from https://www.youtube.com/watch?v=xxA2QjKj73w&t=439s):
+1. container that contains a sorted set of duplicate objects of type Key
+2. usually implemented using a red black tree
+3. Insertion, Removal, Search have logaritmic complexity
+4. If you want to store user defined data types, you need to provide a compare function
+5. We can pass the order of sorting while constructing set object.
 """
 
 
